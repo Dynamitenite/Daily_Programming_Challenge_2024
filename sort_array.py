@@ -14,7 +14,19 @@ def sort(arr):
             arr[mid], arr[high] = arr[high], arr[mid]
             high -= 1
     return arr
+    
+#Test Case 1
+arr1 = [0, 1, 2, 1, 0, 2, 1, 0]
+sorted_arr1 = sort(arr1)
+print(sorted_arr1)
 
-arr = [0, 1, 2, 1, 0, 2, 1, 0]
-sorted_arr = sort(arr)
-print(sorted_arr)
+#Test Case 2:
+arr2 = [2, 2, 2, 2]
+sorted_arr2 = sort(arr2)
+print(sorted_arr2)
+
+#Test Case 3:
+arr3 = [0, 0, 0, 0]
+sorted_arr3 = sort(arr3)
+print(sorted_arr3)
+
